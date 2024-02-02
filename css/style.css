@@ -1,7 +1,22 @@
+#normalText {
+    font-family:'Creato Display', Roboto;
+    font-size: 14px;
+    color: black;
+}
+
+#titleText {
+    font-family: 'Lemon Milk', Roboto;
+    font-size: 20px;
+}
+
 
 /* ==== Navigation Bar ==== */
 body {
     margin: 0px; /* Removes the default margin for the nav bar */
+}
+
+.navBar {
+    box-shadow: 10px 0px 20px; /* Until I figure out how to put the nav bar on top of other elements, this does not work */
 }
 
 .navBar ul {
@@ -20,7 +35,7 @@ body {
     padding: 10px; /* Adds spacing */
     text-decoration: none; /* Gets rid of the underline decoration */
     text-align: center; /* Places text in the middle of each block */
-    font-size: 20px;
+    font-size: 20px; /* Size of the text; default size is 20px */
 }
 
 .navBar li {
@@ -31,17 +46,36 @@ body {
     font-weight: bold; /* When the user hovers over the text, the text becomes bold. This will not be visible to touchscreen users. */
 }
 
-.navBar a.active {
-    background-color: black;
+.navBar img {
+    width: 58px; /* Adjusting the size of the logo */
+    float: left;  
 }
 
-.navBar img {
-    width: 58px;
-    float: left;
-    
-}
+/* ==== Home Page ==== */
 
 #mainImage {
     min-width: none;
     max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#homeBG { 
+    background: #2182bf; /* If the browser doesn't support gradients, it will use this colour instead */
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(33, 130, 191) 21%, rgb(33, 130, 191)100%); /* Best way to make a fade out effect without using tools like Photoshop */
+    max-width: 100%; /* This makes sure that the gradient will adapt to whatever screen the user is using */
+    height: 1400px;
+}
+
+#myWork {
+    padding: 40px;
+    max-width: 85%;
+}
+
+/* ==== About Me Page ==== */
+
+#contactMe a { /* For every anchored item in the div, these values will be applied: */
+    color: black;
+    padding: 0px;
+    margin: 5px;
 }
