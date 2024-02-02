@@ -1,0 +1,47 @@
+
+/* ==== Navigation Bar ==== */
+body {
+    margin: 0px; /* Removes the default margin for the nav bar */
+}
+
+.navBar ul {
+    position: sticky;
+    top: 20px;
+    background-color: white; /* Colour of the navigation bar background; set to white by default */
+    padding: 10px; /* Space around the text in the box. The bigger the value, the bigger the box. Default value is set to 10px */
+    margin: 0px; /* The space around the nav bar; default value is set to 0px */
+    list-style-type: none; /* Buttet point styles; set to none to get rid of bullet points */
+    overflow: hidden; /* Hides any text overflowing */
+}
+
+.navBar a {
+    display:block; /* Each anchored element gets placed in a 'block' */
+    color: black; /* Colour of the text; set to black by default */
+    padding: 10px; /* Adds spacing */
+    text-decoration: none; /* Gets rid of the underline decoration */
+    text-align: center; /* Places text in the middle of each block */
+    font-size: 20px;
+}
+
+.navBar li {
+    float: left; /* Puts all the listed elements to the left side*/
+}
+
+.navBar a:hover {
+    font-weight: bold; /* When the user hovers over the text, the text becomes bold. This will not be visible to touchscreen users. */
+}
+
+.navBar a.active {
+    background-color: black;
+}
+
+.navBar img {
+    width: 58px;
+    float: left;
+    
+}
+
+#mainImage {
+    min-width: none;
+    max-width: 100%;
+}
