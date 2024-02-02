@@ -9,7 +9,6 @@
     font-size: 20px;
 }
 
-
 /* ==== Navigation Bar ==== */
 body {
     margin: 0px; /* Removes the default margin for the nav bar */
@@ -17,11 +16,11 @@ body {
 
 .navBar {
     box-shadow: 10px 0px 20px; /* Until I figure out how to put the nav bar on top of other elements, this does not work */
+    position: sticky; /* A poor attempt at trying to make the navigation bar to follow the top of the screen  */
 }
 
 .navBar ul {
-    position: sticky;
-    top: 20px;
+    top: 20px; 
     background-color: white; /* Colour of the navigation bar background; set to white by default */
     padding: 10px; /* Space around the text in the box. The bigger the value, the bigger the box. Default value is set to 10px */
     margin: 0px; /* The space around the nav bar; default value is set to 0px */
@@ -48,12 +47,12 @@ body {
 
 .navBar img {
     width: 58px; /* Adjusting the size of the logo */
-    float: left;  
+    float: left;  /* Makes sure that the logo goes to the left side */
 }
 
 /* ==== Home Page ==== */
 
-#mainImage {
+#mainImage { /* All of these values are put in place to make sure that the image does not go far off to the side */
     min-width: none;
     max-width: 100%;
     margin: 0px;
@@ -64,18 +63,26 @@ body {
     background: #2182bf; /* If the browser doesn't support gradients, it will use this colour instead */
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(33, 130, 191) 21%, rgb(33, 130, 191)100%); /* Best way to make a fade out effect without using tools like Photoshop */
     max-width: 100%; /* This makes sure that the gradient will adapt to whatever screen the user is using */
-    height: 1400px;
+    height: max-content; /* How big the background is going to be */
 }
 
 #myWork {
-    padding: 40px;
-    max-width: 85%;
+    padding: 40px; /* Adding space just so it wouldn't be too close to the top or to the side */
+    max-width: 85%; /* Set to 85% just so that the width would not go outside its set boundaries */
 }
 
 /* ==== About Me Page ==== */
 
 #contactMe a { /* For every anchored item in the div, these values will be applied: */
-    color: black;
+    color: black; /* Text colour */
     padding: 0px;
-    margin: 5px;
+    margin: 5px; /* Spacing between links */
+}
+
+
+
+#images img { /* While this was not intentional, it still acts as a responsive grid. The only downside is that there's no limit as to how far off to the left it can go,
+    meaning that if the user's screen is absurdly big, then the images will keep going to the left instead of remaining in those two columns */
+    max-width: 100%; /* Ensures that the user can view the entire image without scrolling to the side */
+    margin: 20px; /* Adds a bit of space between each image */ 
 }
