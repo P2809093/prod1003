@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes sure that scaling is responsive - allows the website to be shown correctly on every device -->
+  <title>Home - HP Photography</title> <!-- The title of the current page that the user is on -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" /> <!-- External CSS -->
+  <link rel="icon" type="image/x-icon" href="img\icons\favicon.ico"> <!-- Icon that is next to the title of the page -->
+  <meta charset="UTF-8"
+</head>
+
+<style>
+  @font-face{
+    font-family: CreatoDisplay;
+    src: url(font\CreatoDisplay-Regular.otf); } 
+    /*  Attempted to force the user to download the font, however that just gives me a 'downloadable font: download failed'. 
+        Leaving it here to show as proof. When inspecting for errors, the error should be visible. */
+</style>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navBar">
+    <img src="img\icons\logo.png"> <!-- Logo Icon -->
+    <img src="img\icons\logotext.png"; style="width: 80px";> <!-- Logo Text -->
+      <ul>
+        <!-- The easiest way for me to do a navigation bar is if I do it as a list. -->
+        <li><a href="index.html"><u>Home</u></a></li> <!-- Home Link -->
+        <li><a href="aboutme.html">About Me</a></li> <!-- About Me Link -->
+      </ul>
+  </nav>
+</body>
+
+<main>
+
+  <img src="img\homepage\mainimage.png"; id="mainImage"> <!-- Loads a massive image -->
+<div id="homeBG">
+  <img src="img\homepage\myWork.png"; id="myWork">
+  <div id="images">
+    <img src="img\homepage\placeholderImg.png"; alt="Image 1">
+    <img src="img\homepage\placeholderImg.png"; alt="Image 2">
+    <img src="img\homepage\placeholderImg.png"; alt="Image 3">
+    <img src="img\homepage\placeholderImg.png"; alt="Image 4">
+    <img src="img\homepage\placeholderImg.png"; alt="Image 5">
+    <img src="img\homepage\placeholderImg.png"; alt="Image 6">
+
+  </div>
+</div>
+</main>
+
+</html>
