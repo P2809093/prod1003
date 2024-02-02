@@ -79,8 +79,6 @@ body {
     margin: 5px; /* Spacing between links */
 }
 
-
-
 #images img { /* While this was not intentional, it still acts as a responsive grid. The only downside is that there's no limit as to how far off to the left it can go,
     meaning that if the user's screen is absurdly big, then the images will keep going to the left instead of remaining in those two columns */
     max-width: 100%; /* Ensures that the user can view the entire image without scrolling to the side */
